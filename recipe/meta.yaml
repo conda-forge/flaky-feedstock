@@ -1,7 +1,7 @@
 {% set name = "flaky" %}
-{% set version = "3.4.0" %}
+{% set version = "3.5.0" %}
 {% set hash_type = "sha256" %}
-{% set hash = "4ad7880aef8c35a34ddb394d4fa33047765bca1e3d67d182bf6eba9c8eabf3a2" %}
+{% set hash = "c272a693d47a66ff140d4f90e75e31ea309ffdab3f4361c95859020e34458c22" %}
 
 package:
   name: {{ name|lower }}
@@ -15,11 +15,12 @@ source:
 build:
   noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
-  build:
+  host:
     - python
+    - pip
     - setuptools
   run:
     - python
