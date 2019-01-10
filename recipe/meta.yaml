@@ -1,7 +1,7 @@
 {% set name = "flaky" %}
-{% set version = "3.5.1" %}
+{% set version = "3.5.2" %}
 {% set hash_type = "sha256" %}
-{% set hash = "3434e725ebb462e8613881bc5fb2e21309625c4dc846262019e38d715517065e" %}
+{% set hash = "a568c7cac220bbfa693592df4d2efed2ada0a7d858deb45e3a6bd0c209d81bf1" %}
 
 package:
   name: {{ name|lower }}
