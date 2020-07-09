@@ -1,7 +1,6 @@
 {% set name = "flaky" %}
-{% set version = "3.6.1" %}
-{% set hash_type = "sha256" %}
-{% set hash = "8cd5455bb00c677f787da424eaf8c4a58a922d0e97126d3085db5b279a98b698" %}
+{% set version = "3.7.0" %}
+{% set hash = "3ad100780721a1911f57a165809b7ea265a7863305acb66708220820caf8aa0d" %}
 
 package:
   name: {{ name|lower }}
@@ -10,12 +9,12 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  {{ hash_type }}: {{ hash }}
+  sha256: {{ hash }}
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
