@@ -1,6 +1,6 @@
 {% set name = "flaky" %}
-{% set version = "3.7.0" %}
-{% set hash = "3ad100780721a1911f57a165809b7ea265a7863305acb66708220820caf8aa0d" %}
+{% set version = "3.8.0" %}
+{% set hash = "3b4b9f5c15829c919c8e05b15582fa1c9c7f20a303581dd5d0bc56a66441389c" %}
 
 package:
   name: {{ name|lower }}
@@ -18,11 +18,11 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
     - setuptools
   run:
-    - python
+    - python >=3.6
 
 test:
   imports:
@@ -30,7 +30,7 @@ test:
 
 about:
   home: https://github.com/box/flaky
-  license: Apache 2.0
+  license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
   summary: Plugin for nose or py.test that automatically reruns flaky tests.
