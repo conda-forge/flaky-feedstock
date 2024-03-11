@@ -30,7 +30,7 @@ test:
 
 about:
   home: https://github.com/box/flaky
-  license: Apache 2.0
+  license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
   summary: Plugin for nose or py.test that automatically reruns flaky tests.
