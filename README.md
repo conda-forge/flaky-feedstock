@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/flaky-feedstock
 
 Home: https://github.com/box/flaky
 
-Package license: Apache 2.0
+Package license: Apache-2.0
 
 Summary: Plugin for nose or py.test that automatically reruns flaky tests.
 
